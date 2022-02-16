@@ -1,0 +1,114 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "You're creating an app!",
+                    "wrap": true,
+                    "weight": "Bolder",
+                    "size": "Large",
+                    "color": "Attention"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Amazing!\n\nI'm contacting you to see if you would like some assistance?  I am the CoE coach. A bot, capable of advising you on app architecture, finding help in the community, or helping you with Canvas app development.  If you would like me to help you, please follow the steps below. Alternatively, select the opt-out button and I won't reach out to you again about this app.",
+                    "wrap": true
+                },
+                {
+                    "type": "Container",
+                    "items": [
+                        {
+                            "type": "Input.Toggle",
+                            "title": "I would like to opt out.",
+                            "id": "userOptOut"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Step one",
+                    "wrap": true,
+                    "color": "Accent"
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "From the options below, please select the kind of assistance you would like, and we'll take things from there.",
+            "wrap": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "Input.ChoiceSet",
+                    "choices": [
+                        {
+                            "title": "Architecture advice",
+                            "value": "AppAdv"
+                        },
+                        {
+                            "title": "Community help",
+                            "value": "CommHelp"
+                        },
+                        {
+                            "title": "App development",
+                            "value": "AppDev"
+                        }
+                    ],
+                    "placeholder": "Please select",
+                    "isMultiSelect": true,
+                    "id": "helpSelection"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "To ensure that I provide you with advice relevant to your experience and background, can you let me know your experience level with Power Apps development:",
+                    "wrap": true
+                }
+            ]
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "choices": [
+                {
+                    "title": "Beginner, new to Power Apps and app development",
+                    "value": "NewDev"
+                },
+                {
+                    "title": "Beginner, new to Power Apps, with app development experience",
+                    "value": "Choice 2"
+                },
+                {
+                    "title": "Advanced"
+                }
+            ],
+            "placeholder": "Please select",
+            "style": "expanded",
+            "id": "experienceSelection"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit request"
+                }
+            ]
+        }
+    ]
+}
