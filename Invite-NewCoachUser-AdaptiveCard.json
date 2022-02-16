@@ -73,7 +73,9 @@
                     ],
                     "placeholder": "Please select",
                     "isMultiSelect": true,
-                    "id": "helpSelection"
+                    "id": "helpSelection",
+                    "style": "expanded",
+                    "isRequired": true
                 },
                 {
                     "type": "TextBlock",
@@ -99,14 +101,16 @@
             ],
             "placeholder": "Please select",
             "style": "expanded",
-            "id": "experienceSelection"
+            "id": "experienceSelection",
+            "isRequired": true
         },
         {
             "type": "ActionSet",
             "actions": [
                 {
                     "type": "Action.Submit",
-                    "title": "Submit request"
+                    "title": "Submit request",
+                    "associatedInputs": "auto"
                 }
             ]
         }
