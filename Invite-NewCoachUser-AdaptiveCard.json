@@ -112,7 +112,7 @@
             "errorMessage": "Please select an option that describes your experience closest."
         },
         {
-            "type": "ActionSet",
+            "type": "ActionSet1",
             "actions": [
                 {
                     "type": "Action.Submit",
