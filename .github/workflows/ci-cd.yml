@@ -20,4 +20,21 @@ jobs:
         with: 
           name: packed-solutions
           path: packed-solutions
+  deploy:
+    environment: test
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: packed-solutions
+      - uses: microsoft/powerplatform-actions/import-solution@v0
+        with: 
+          environment-url: ${{ secrets.ENVIRONMENT_URL }}
+          app-id: ${{ secrets.CLIENT_ID }}
+          client-secret: ${{ secrets.CLIENT_SECRET }}
+          tenant-id: ${{ secrets.TENANT_ID }}
+          solution-file: pi_core_managed.zip
+          run-asynchronously: true
      
