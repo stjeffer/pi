@@ -1,0 +1,30 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "You're creating an app!",
+                    "wrap": true,
+                    "weight": "Bolder",
+                    "size": "Large",
+                    "color": "Attention"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Amazing!\n\nI'm contacting you to see if you would like some assistance?  I am the CoE coach. A bot, capable of advising you on app architecture, finding help in the community, or helping you with Canvas app development.  If you would like me to help you, type 'get started'. If you would like to opt-out, enter 'opt out' and I won't contact you again about this app.",
+                    "wrap": true
+                }
+            ]
+        }
+    ]
+}

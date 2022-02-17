@@ -1,7 +1,7 @@
 {
     "type": "AdaptiveCard",
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "version": "1.4",
+    "version": "1.2",
     "body": [
         {
             "type": "Container",
@@ -72,10 +72,16 @@
                         }
                     ],
                     "placeholder": "Please select",
-                    "isMultiSelect": true,
                     "id": "helpSelection",
                     "style": "expanded",
-                    "isRequired": true
+                    "isRequired": true,
+                    "errorMessage": "Please choose from the help available"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Step two",
+                    "wrap": true,
+                    "color": "Accent"
                 },
                 {
                     "type": "TextBlock",
@@ -102,7 +108,8 @@
             "placeholder": "Please select",
             "style": "expanded",
             "id": "experienceSelection",
-            "isRequired": true
+            "isRequired": true,
+            "errorMessage": "Please select an option that describes your experience closest."
         },
         {
             "type": "ActionSet",
