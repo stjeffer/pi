@@ -80,6 +80,7 @@
     <RootComponents>
       <RootComponent type="29" id="{42ea9c60-128f-ec11-b400-002248427e63}" behavior="0" />
       <RootComponent type="300" schemaName="crcba_coecoach_5ed32" behavior="0" />
+      <RootComponent type="300" schemaName="crcba_thursdaydemo_02267" behavior="0" />
     </RootComponents>
     <MissingDependencies />
   </SolutionManifest>
